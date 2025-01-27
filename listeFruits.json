@@ -1,22 +1,7 @@
 [
-    {
-        "id": 1,
-        "name": "Pomme"
-    },
-    {
-        "id": 4,
-        "name": "Fraise"
-    },
-    {
-        "id": 3,
-        "name": "Orange"
-    },
-    {
-        "id": 5,
-        "name": "Kiwi"
-    },
-    {
-        "id": 7,
-        "name": "Cerise"
-    }
+    "Pomme", 
+    "Fraise",
+    "Orange",
+    "Kiwi",
+    "Cerise"
 ]

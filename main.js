@@ -1,4 +1,4 @@
-function getFruits() {
+function obtenirFruit() {
     let listeFruits = []
 
     listeFruits.push('Fruit 1')
@@ -7,10 +7,10 @@ function getFruits() {
     listeFruits.push('Fruit 4')
     listeFruits.push('Fruit 5')
     
-    return listeFruits;
+    return listeFruits
 }
 
-function displayFruits(listeFruits) {
+function afficherFruit(listeFruits) {
     const ul = document.querySelector('#listeFruits')
     for (let fruit of listeFruits) {
         const li = document.createElement('li')
@@ -19,9 +19,9 @@ function displayFruits(listeFruits) {
     }
 }
 
-async function main() {
-    const listeFruits = getFruits()  
-    displayFruits(listeFruits)
+function main() {
+    const listeFruits = obtenirFruit()  
+    afficherFruit(listeFruits)
 }
 
 main()
