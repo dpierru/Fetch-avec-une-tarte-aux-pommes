@@ -1,11 +1,6 @@
-function obtenirListeFruits() {
-    let listeFruits = []
-
-    listeFruits.push('Fruit 1')
-    listeFruits.push('Fruit 2')
-    listeFruits.push('Fruit 3')
-    listeFruits.push('Fruit 4')
-    listeFruits.push('Fruit 5')
+async function obtenirListeFruits() {
+    const reponse = await fetch("listeFruits.json")
+    const listeFruits = await reponse.json()
     
     return listeFruits
 }
@@ -19,8 +14,8 @@ function afficherListeFruits(listeFruits) {
     }
 }
 
-function main() {
-    const listeFruits = obtenirListeFruits()  
+async function main() {
+    const listeFruits = await obtenirListeFruits()
     afficherListeFruits(listeFruits)
 }
 
